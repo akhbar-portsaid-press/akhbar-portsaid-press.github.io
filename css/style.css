@@ -1344,3 +1344,49 @@ pre .javascript .function {
   margin-right: 5px;
   display: inline-block;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px /* Adjust the gap between grid items as needed */;
+}
+.grid-item {
+  background-color: #f0f0f0 /* Optional: Add background color */;
+  padding: 20px /* Optional: Add padding */;
+  border: 1px solid #ddd /* Optional: Add border */;
+}
+/* Add this to your styl.styl file */
+#pricing-calculator {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#pricing-calculator label {
+  display: block;
+  margin-bottom: 10px;
+}
+#pricing-calculator input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#pricing-calculator button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#pricing-calculator button:hover {
+  background-color: #0056b3;
+}
+#pricing-calculator p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
