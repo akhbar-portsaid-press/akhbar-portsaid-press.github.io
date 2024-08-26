@@ -1370,7 +1370,7 @@ pre .javascript .function {
 }
 #pricing-calculator input {
   display: block;
-  width: 50%; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   height: 20px; /* Adjust height as needed */
   padding: 5px;
   margin-bottom: 5px;

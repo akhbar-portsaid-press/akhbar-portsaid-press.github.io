@@ -105,10 +105,9 @@
 </head>
 
 <body>
-  <div >
-      ?<div id="pricing-calculator">
+      <div id="pricing-calculator">
     <label for="Category">Category:</label>
-    <select id="Category" name="Category">
+     <select id="Category" name="Category">
       <option value="phrase1">ENVELOPS</option>
       <option value="phrase2">CALLENDARS</option>
       <option value="phrase3">SIGNS</option>
@@ -118,19 +117,18 @@
       <option value="phrase7">CALLENDARS</option>
       <option value="phrase8">DOCTORS PRESCRIPTION</option>
       <option value="phrase8">CORPORATE BOOKS</option>
-
-
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    </select>        
+    <label for="Quantity">Quantity:</label>
+      <input type="number" id="Quantity" name="price" min="0" value="0">
     <label for="printing">Printing:</label>
-    <select id="printing" name="printing">
+     <select id="printing" name="printing">
       <option value="phrase1">Full colour front,Blank back</option>
       <option value="phrase2">Full colour front,Full colour back</option>
       <option value="phrase3">One colour front,Blank back</option>
       <option value="phrase4">Two colour front,Blank back</option>
       <option value="phrase5">Full colour front,One colur back</option>
       <option value="phrase6">Full colour front,Two colur back</option>
-    </select>        
+     </select>        
     <label for="Paper">Paper:</label>
     <select id="Paper" name="Paper">
       <option value="phrase1">Full colour front,Blank back</option>
@@ -148,7 +146,6 @@
     <p>Total: <span id="total">0</span></p>
   </div>
   <script src="/js/pricing-calculator.js"></script>
-  </div>
         
           <aside id="sidebar">
   
@@ -203,8 +200,7 @@
   
 </aside>
         
-      </div>
-      <footer id="footer">
+      <!-- <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
@@ -214,8 +210,7 @@
     </div>
   </div>
 </footer>
-
-    </div>
+ -->
     <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
@@ -242,7 +237,6 @@
 
 
 
-  </div>
 </body>
 </html>
 </section>
