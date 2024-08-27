@@ -219,69 +219,78 @@
 
 
 </section>
-        
-          <div id="pricing-calculator">
-  <label for="Category">Category:</label>
-   <select id="Category" name="Category">
-    <option value="phrase1">ENVELOPS</option>
-    <option value="phrase2">CALLENDARS</option>
-    <option value="phrase3">SIGNS</option>
-    <option value="phrase4">POSTCARDS/CARDS</option>
-    <option value="phrase5">BORCHURES</option>
-    <option value="phrase6">FLYERS</option>
-    <option value="phrase7">CALLENDARS</option>
-    <option value="phrase8">DOCTORS PRESCRIPTION</option>
-    <option value="phrase8">CORPORATE BOOKS</option>
-  </select>        
-  <label for="Quantity">Quantity:</label>
-    <input type="number" id="Quantity" name="price" min="0" value="0">
-  <label for="printing">Printing:</label>
-   <select id="printing" name="printing">
-    <option value="phrase1">Full colour front,Blank back</option>
-    <option value="phrase2">Full colour front,Full colour back</option>
-    <option value="phrase3">One colour front,Blank back</option>
-    <option value="phrase4">Two colour front,Blank back</option>
-    <option value="phrase5">Full colour front,One colur back</option>
-    <option value="phrase6">Full colour front,Two colur back</option>
-   </select>        
-  <label for="Paper">Paper:</label>
-  <select id="Paper" name="Paper">
-    <option value="phrase1">Full colour front,Blank back</option>
-    <option value="phrase2">Full colour front,Full colour back</option>
-    <option value="phrase3">One colour front,Blank back</option>
-    <option value="phrase4">Two colour front,Blank back</option>
-    <option value="phrase5">Full colour front,One colur back</option>
-    <option value="phrase6">Full colour front,Two colur back</option>
-  </select>     
-  <label for="proof">Proof:</label>
-  <input type="string" id="proof" name="price" min="0" value="0">
-  <label for="production time">Production Time:</label>
-  <input type="number" id="time" name="price" min="0" value="0">
-  <button onclick="calculateTotal()">Calculate</button>
-  <p>Total: <span id="total">0</span></p>
-</div>
-<script src="/js/pricing-calculator.js"></script>
-        
-      </div>
-      <footer id="footer">
+        <!-- 
+          <aside id="sidebar">
   
+    hexo.extend.helper.register('custom_calculator', function() {
+    return `
+<div id="pricing-calculator">
+    <label for="Category">Category:</label>
+     <select id="Category" name="Category">
+      <option value="phrase1">ENVELOPS</option>
+      <option value="phrase2">CALLENDARS</option>
+      <option value="phrase3">SIGNS</option>
+      <option value="phrase4">POSTCARDS/CARDS</option>
+      <option value="phrase5">BORCHURES</option>
+      <option value="phrase6">FLYERS</option>
+      <option value="phrase7">CALLENDARS</option>
+      <option value="phrase8">DOCTORS PRESCRIPTION</option>
+      <option value="phrase8">CORPORATE BOOKS</option>
+    </select>        
+    <label for="Quantity">Quantity:</label>
+      <input type="number" id="Quantity" name="price" min="0" value="0">
+    <label for="printing">Printing:</label>
+     <select id="printing" name="printing">
+      <option value="phrase1">Full colour front,Blank back</option>
+      <option value="phrase2">Full colour front,Full colour back</option>
+      <option value="phrase3">One colour front,Blank back</option>
+      <option value="phrase4">Two colour front,Blank back</option>
+      <option value="phrase5">Full colour front,One colur back</option>
+      <option value="phrase6">Full colour front,Two colur back</option>
+     </select>        
+    <label for="Paper">Paper:</label>
+    <select id="Paper" name="Paper">
+      <option value="phrase1">Full colour front,Blank back</option>
+      <option value="phrase2">Full colour front,Full colour back</option>
+      <option value="phrase3">One colour front,Blank back</option>
+      <option value="phrase4">Two colour front,Blank back</option>
+      <option value="phrase5">Full colour front,One colur back</option>
+      <option value="phrase6">Full colour front,Two colur back</option>
+    </select>     
+    <label for="proof">Proof:</label>
+    <input type="string" id="proof" name="price" min="0" value="0">
+    <label for="production time">Production Time:</label>
+    <input type="number" id="time" name="price" min="0" value="0">
+    <button onclick="calculateTotal()">Calculate</button>
+    <p>Total: <span id="total">0</span></p>
+  </div>
+  <script src="<%= url_for('/js/pricing-calculator.js') %>"></script>
+    `;
+  });
+  
+  
+  
+</aside>
+         -->
+      </div>
+      <!-- <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
       
       &copy; 2024 mohamed elnashar<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="https://engnashar.github.io/" target="_blank">ENGNASHAR</a>
     </div>
   </div>
 </footer>
-
+ -->
     </div>
-    <nav id="mobile-nav">
+    <!-- <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
-</nav>
+</nav> -->
     
 
 

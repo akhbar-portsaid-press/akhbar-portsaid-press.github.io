@@ -1354,15 +1354,23 @@ pre .javascript .function {
   padding: 20px /* Optional: Add padding */;
   border: 1px solid #ddd /* Optional: Add border */;
 }
+/* Ensure the parent container is positioned */
+.parent-container {
+  position: relative;
+}
 /* Add this to your styl.styl file */
 #pricing-calculator {
+  position: absolute;
+  top: 10px; /* Adjust as needed to avoid overlapping */
+  right: 0px; /* Adjust as needed */
   margin-top: 10px;
   padding: 10px;
   background-color: #b8860b;
   border: 1px solid #ddd;
   border-radius: 10px; /* Rounded edges */
-  width: 60%; /* Adjust width as needed */
+  width: 250px; /* Adjust width as needed */
   height: auto; /* Adjust height as needed */
+  z-index: 1000; /* Ensure it stays on top */
 }
 #pricing-calculator label {
   display: block;
@@ -1375,7 +1383,7 @@ pre .javascript .function {
 }
 #pricing-calculator input {
   display: block;
-  width: auto; /* Adjust width as needed */
+  width: 50%; /* Adjust width as needed */
   height: 20px; /* Adjust height as needed */
   padding: 5px;
   margin-bottom: 5px;
@@ -1402,7 +1410,7 @@ pre .javascript .function {
 }
 #pricing-calculator select {
   display: block;
-  width: 62.5%; /* Adjust width as needed */
+  width: auto; /* Adjust width as needed */
   height: 30px; /* Adjust height as needed */
   padding: 5px;
   margin-bottom: 5px;
