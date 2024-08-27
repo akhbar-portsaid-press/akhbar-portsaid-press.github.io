@@ -117,58 +117,47 @@
 
 </section>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/08/22/CALLENDARS/">CALLENDARS</a>
-          </li>
-        
-          <li>
-            <a href="/2024/08/22/BORCHURES/">BORCHURES</a>
-          </li>
-        
-          <li>
-            <a href="/2024/08/22/CARDS/">POSTCARDS/CARDS</a>
-          </li>
-        
-          <li>
-            <a href="/2024/08/22/CORPORATE%20BOOKS/">CORPORATE BOOK</a>
-          </li>
-        
-          <li>
-            <a href="/2024/08/22/DOCTORS%20PRESCRIPTION/">DOCTORS PRESCRIPTION</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
+          <div id="pricing-calculator">
+  <label for="Category">Category:</label>
+   <select id="Category" name="Category">
+    <option value="phrase1">ENVELOPS</option>
+    <option value="phrase2">CALLENDARS</option>
+    <option value="phrase3">SIGNS</option>
+    <option value="phrase4">POSTCARDS/CARDS</option>
+    <option value="phrase5">BORCHURES</option>
+    <option value="phrase6">FLYERS</option>
+    <option value="phrase7">CALLENDARS</option>
+    <option value="phrase8">DOCTORS PRESCRIPTION</option>
+    <option value="phrase8">CORPORATE BOOKS</option>
+  </select>        
+  <label for="Quantity">Quantity:</label>
+    <input type="number" id="Quantity" name="price" min="0" value="0">
+  <label for="printing">Printing:</label>
+   <select id="printing" name="printing">
+    <option value="phrase1">Full colour front,Blank back</option>
+    <option value="phrase2">Full colour front,Full colour back</option>
+    <option value="phrase3">One colour front,Blank back</option>
+    <option value="phrase4">Two colour front,Blank back</option>
+    <option value="phrase5">Full colour front,One colur back</option>
+    <option value="phrase6">Full colour front,Two colur back</option>
+   </select>        
+  <label for="Paper">Paper:</label>
+  <select id="Paper" name="Paper">
+    <option value="phrase1">Full colour front,Blank back</option>
+    <option value="phrase2">Full colour front,Full colour back</option>
+    <option value="phrase3">One colour front,Blank back</option>
+    <option value="phrase4">Two colour front,Blank back</option>
+    <option value="phrase5">Full colour front,One colur back</option>
+    <option value="phrase6">Full colour front,Two colur back</option>
+  </select>     
+  <label for="proof">Proof:</label>
+  <input type="string" id="proof" name="price" min="0" value="0">
+  <label for="production time">Production Time:</label>
+  <input type="number" id="time" name="price" min="0" value="0">
+  <button onclick="calculateTotal()">Calculate</button>
+  <p>Total: <span id="total">0</span></p>
+</div>
+<script src="/js/pricing-calculator.js"></script>
         
       </div>
       <footer id="footer">

@@ -1361,16 +1361,21 @@ pre .javascript .function {
   background-color: #b8860b;
   border: 1px solid #ddd;
   border-radius: 10px; /* Rounded edges */
-  width: 50%; /* Adjust width as needed */
+  width: 60%; /* Adjust width as needed */
   height: auto; /* Adjust height as needed */
 }
 #pricing-calculator label {
   display: block;
+  width: auto; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  padding: 5px;
   margin-bottom: 5px;
+  border-radius: 10px; /* Rounded edges */
+  background-color: #b8860b;
 }
 #pricing-calculator input {
   display: block;
-  width: 100%; /* Adjust width as needed */
+  width: auto; /* Adjust width as needed */
   height: 20px; /* Adjust height as needed */
   padding: 5px;
   margin-bottom: 5px;
@@ -1394,4 +1399,13 @@ pre .javascript .function {
   margin-top: 10px;
   font-size: 18px;
   font-weight: bold;
+}
+#pricing-calculator select {
+  display: block;
+  width: 62.5%; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Rounded edges */
 }
