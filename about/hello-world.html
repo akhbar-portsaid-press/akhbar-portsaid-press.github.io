@@ -116,12 +116,9 @@
 
 
 </section>
-        <!-- 
-          <aside id="sidebar">
-  
-    hexo.extend.helper.register('custom_calculator', function() {
-    return `
-<div id="pricing-calculator">
+        
+          <div class = 'parent-container'>
+  <div id="pricing-calculator">
     <label for="Category">Category:</label>
      <select id="Category" name="Category">
       <option value="phrase1">ENVELOPS</option>
@@ -161,16 +158,11 @@
     <button onclick="calculateTotal()">Calculate</button>
     <p>Total: <span id="total">0</span></p>
   </div>
-  <script src="<%= url_for('/js/pricing-calculator.js') %>"></script>
-    `;
-  });
-  
-  
-  
-</aside>
-         -->
-      </div>
-      <!-- <footer id="footer">
+</div>
+  <script src="/js/pricing-calculator.js"></script>
+        
+      </div> <!-- Add this closing div for .outer -->
+      <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
       
@@ -179,16 +171,17 @@
     </div>
   </div>
 </footer>
- -->
-    </div>
-    <!-- <nav id="mobile-nav">
+
+    </div> <!-- Add this closing div for #wrap -->
+  </div> <!-- Add this closing div for #container -->
+  <!-- <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
 </nav> -->
-    
+  
 
 
 <script src="/js/jquery-3.6.4.min.js"></script>
@@ -207,6 +200,5 @@
 
 
 
-  </div>
 </body>
 </html>
