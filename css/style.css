@@ -153,6 +153,10 @@ body {
 #container {
   position: relative;
 }
+#footer {
+  position: relative;
+  clear: both;
+}
 .mobile-nav-on {
   overflow: hidden;
 }
