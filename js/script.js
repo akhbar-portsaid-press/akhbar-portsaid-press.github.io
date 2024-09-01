@@ -11,7 +11,7 @@ async function fetchRate() {
 async function createChart() {
     const data = await fetchRate();
     const rate = data.rate;
-    const timestamp = new Date(data.timestamp * 1000); // Convert UNIX timestamp to JavaScript Date object
+    const timestamp = new Date(data.timestamp); // Convert UNIX timestamp to JavaScript Date object
 
     if (forexChart) {
         forexChart.destroy(); // Destroy the existing chart instance
@@ -26,7 +26,7 @@ async function createChart() {
             labels: [timestamp.toLocaleString()],
             datasets: [{
                 label: 'USD to EUR Exchange Rate',
-                data: [rate],
+                data: [rate-.903],
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
             }]
@@ -43,7 +43,7 @@ async function updateChart() {
         if (!data) {
             throw new Error('No data received');
         }
-        const rate = data.rate;
+        const rate = data.rate-.9;
         const timestamp = new Date(data.timestamp); // Convert UNIX timestamp to JavaScript Date object
 
         if (forexChart) {
