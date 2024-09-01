@@ -97,7 +97,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://akhbar-portsaid-press.github.io/services/index.html" data-id="cm0jl2tis00088guq5lcs6841" data-title="services" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://akhbar-portsaid-press.github.io/services/index.html" data-id="cm0jlx4gw00088suq8u6s969j" data-title="services" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -119,40 +119,43 @@
 >
     <label for="Category">Category:</label>
      <select id="Category" name="Category">
-      <option value="phrase1">ENVELOPS</option>
-      <option value="phrase2">CALLENDARS</option>
-      <option value="phrase3">SIGNS</option>
-      <option value="phrase4">POSTCARDS/CARDS</option>
-      <option value="phrase5">BORCHURES</option>
-      <option value="phrase6">FLYERS</option>
-      <option value="phrase7">CALLENDARS</option>
-      <option value="phrase8">DOCTORS PRESCRIPTION</option>
-      <option value="phrase8">CORPORATE BOOKS</option>
+      <option value="ENVELOPS">ENVELOPS</option>
+      <option value="CALLENDARS">CALLENDARS</option>
+      <option value="SIGNS">SIGNS</option>
+      <option value="POSTCARDS/CARDS">POSTCARDS/CARDS</option>
+      <option value="BORCHURES">BORCHURES</option>
+      <option value="FLYERS">FLYERS</option>
+      <option value="CALLENDARS">CALLENDARS</option>
+      <option value="DOCTORS PRESCRIPTION">DOCTORS PRESCRIPTION</option>
+      <option value="CORPORATE BOOKS">CORPORATE BOOKS</option>
     </select>        
     <label for="Quantity">Quantity:</label>
-      <input type="number" id="Quantity" name="price" min="0" value="0">
+      <input type="number" id="Quantity"  min="500" value="500">
     <label for="printing">Printing:</label>
      <select id="printing" name="printing">
-      <option value="phrase1">Full colour front,Blank back</option>
-      <option value="phrase2">Full colour front,Full colour back</option>
-      <option value="phrase3">One colour front,Blank back</option>
-      <option value="phrase4">Two colour front,Blank back</option>
-      <option value="phrase5">Full colour front,One colur back</option>
-      <option value="phrase6">Full colour front,Two colur back</option>
+      <option value="Full colour front,Blank back">Full colour front,Blank back</option>
+      <option value="Full colour front,Full colour back">Full colour front,Full colour back</option>
+      <option value="One colour front,Blank back">One colour front,Blank back</option>
+      <option value="Two colour front,Blank back">Two colour front,Blank back</option>
+      <option value="Full colour front,One colur back">Full colour front,One colur back</option>
+      <option value="Full colour front,Two colur back">Full colour front,Two colur back</option>
      </select>        
     <label for="Paper">Paper:</label>
     <select id="Paper" name="Paper">
-      <option value="phrase1">Full colour front,Blank back</option>
-      <option value="phrase2">Full colour front,Full colour back</option>
-      <option value="phrase3">One colour front,Blank back</option>
-      <option value="phrase4">Two colour front,Blank back</option>
-      <option value="phrase5">Full colour front,One colur back</option>
-      <option value="phrase6">Full colour front,Two colur back</option>
+      <option value="phrase1">paper1</option>
+      <option value="phrase2">paper2</option>
+      <option value="phrase3">paper3</option>
+      <option value="phrase4">paper4</option>
+      <option value="phrase5">paper5</option>
+      <option value="phrase6">paper6</option>
     </select>     
     <label for="proof">Proof:</label>
-    <input type="string" id="proof" name="price" min="0" value="0">
+    <select id="Proof" name="prof">
+      <option value="phrase1">pdf</option>
+      <option value="phrase2">one hard copy</option>
+   </select>         
     <label for="production time">Production Time:</label>
-    <input type="number" id="time" name="price" min="0" value="0">
+    <input type="number" id="time" name="price" min="3" value="0">
     <button onclick="calculateTotal()">Calculate</button>
     <p>Total: <span id="total">0</span></p>
     <button type="submit">Send</button>
