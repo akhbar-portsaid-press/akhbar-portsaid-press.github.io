@@ -133,6 +133,10 @@
         
           <div class = 'parent-container'>
   <div id="pricing-calculator">
+    <form
+  action="https://formspree.io/f/mzzponlw"
+  method="POST"
+>
     <label for="Category">Category:</label>
      <select id="Category" name="Category">
       <option value="phrase1">ENVELOPS</option>
@@ -171,6 +175,8 @@
     <input type="number" id="time" name="price" min="0" value="0">
     <button onclick="calculateTotal()">Calculate</button>
     <p>Total: <span id="total">0</span></p>
+    <button type="submit">Send</button>
+</form>
   </div>
 </div>
   <script src="/js/pricing-calculator.js"></script>
