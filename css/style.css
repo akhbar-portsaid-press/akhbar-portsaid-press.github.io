@@ -160,6 +160,63 @@ body {
 .mobile-nav-on {
   overflow: hidden;
 }
+#header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 40px;
+}
+.banner-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.banner {
+  width: 60%; /* Set the width to 60% of the container */
+  height: auto; /* Maintain the aspect ratio */
+}
+.banner img {
+  width: 100%; /* Make the image fit the banner width */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image covers the banner area without stretching */
+}
+.extra-container {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1; /* Take up the remaining space */
+  height: 400px; /* Adjust height as needed */
+padding
+}
+.post-content-item {
+  display: none;
+}
+.post-content-item.visible {
+  display: block;
+}
 #wrap {
   height: 100%;
   width: 100%;
@@ -1420,4 +1477,33 @@ pre .javascript .function {
   margin-bottom: 5px;
   border: 1px solid #ccc;
   border-radius: 10px; /* Rounded edges */
+}
+#post-thumbnails {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.post-content-item {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+#index-page {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: left;
+  -moz-box-align: left;
+  -ms-flex-align: left;
+  -webkit-align-items: left;
+  align-items: left;
+  padding: 40px;
 }
