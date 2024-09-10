@@ -168,7 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://akhbar-portsaid-press.github.io/2024/08/22/CORPORATE%20BOOKS/" data-id="cm0siurrp0007ysuq2j9i51ck" data-title="CORPORATE BOOK" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://akhbar-portsaid-press.github.io/2024/08/22/CORPORATE%20BOOKS/" data-id="cm0wqg1890007wguqao4jdx5c" data-title="CORPORATE BOOK" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -201,7 +201,7 @@
 
 </section>
         
-          <div class='parent-container'>
+          <div class='sidebar'>
   <div id="pricing-calculator">
     <form action="https://getform.io/f/bpjmvvnb" method="POST" enctype="multipart/form-data">
       <label for="Category">Category:</label>
@@ -241,13 +241,14 @@
         <option value="phrase1">pdf</option>
         <option value="phrase2">one hard copy</option>
       </select>         
+      <label for="file">Upload File:</label>
+      <input type="file" id="file" name="attachment" multiple>
       <label for="production time">Production Time:</label>
       <input type="number" id="time" name="price" min="3" value="0">
       <button type="button" id="calculateButton">Calculate</button>
       <p>Total: <span id="total">0</span></p>
       <button type="submit">Send</button>
-      <label for="file">Upload File:</label>
-      <input type="file" id="file" name="attachment" multiple>
+
     </form>
   </div>
 </div>
@@ -267,13 +268,13 @@
 
     </div> <!-- Add this closing div for #wrap -->
   </div> <!-- Add this closing div for #container -->
-  <nav id="mobile-nav">
+  <!-- <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
   
-</nav>
+</nav> -->
   
 
 
@@ -293,5 +294,19 @@
 
 
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var toggleButton = document.createElement('div');
+        toggleButton.className = 'sidebar-toggle';
+        toggleButton.innerHTML = '☰';
+        document.body.appendChild(toggleButton);
+    
+        toggleButton.addEventListener('click', function() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        });
+    });
+    </script>
+    
 </body>
 </html>

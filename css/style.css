@@ -1507,3 +1507,32 @@ pre .javascript .function {
   align-items: center;
   padding: 0px;
 }
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+  .sidebar.active {
+    display: block;
+  }
+}
