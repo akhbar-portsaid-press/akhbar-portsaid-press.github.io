@@ -1522,14 +1522,14 @@ pre .javascript .function {
   }
   .sidebar {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 250px;
     height: 100%;
     background-color: #fff;
-    -webkit-box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     z-index: 999;
   }
   .sidebar.active {
